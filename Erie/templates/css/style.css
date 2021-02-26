@@ -1,0 +1,116 @@
+body {
+	max-width: 1000px;
+	float: none;
+	margin: auto;
+	padding: 0px;
+	background-color: #e6e6e6;
+}
+h1, h2, h3, h4, h5, h6 {
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+}
+p{
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+}
+a{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.3em;
+}
+.aside-left {
+	width: 20%;
+	float: left;
+	display: block;
+	min-height: 300px;
+	background-color: #e6e6e6e6;
+}
+main {
+	width: 60%;
+	float: left;
+	display: block;
+	min-height: 300px;
+	background-color: #e6e6e6;
+}
+.sub-main {
+	width: 80%;
+	float: left;
+	display: block;
+	min-height: 300px;
+	background-color: #e6e6e6;
+}
+aside {
+	width: 20%;
+	float: right;
+	display: block;
+	min-height: 300px;
+	background-color: #e6e6e6;
+}
+footer{
+	width: 100%;
+	display: inline-block;
+	background-color: #333;
+}
+.left-footer{
+	width: 33%;
+	float: left;
+	display: block;
+	min-height: 200px;
+	background-color: #333;
+	color: #fff;
+}
+.center-footer{
+	width: 33%;
+	float: left;
+	display: block;
+	min-height: 200px;
+	background-color: #333;
+	color: #fff;
+}
+.right-footer{
+	width: 33%;
+	float: right;
+	display: block;
+	min-height: 200px;
+	background-color: #333;
+	color: #fff;
+}
+.copyright{
+	width: 100%;
+	display: inline-block;
+	background-color: #fff;
+}
+
+/* Menu CSS */
+.topnav {
+  background-color: #000;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
