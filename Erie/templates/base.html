@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Metas -->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="A personal website for my fans :-P">
+	
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	
+	<title>HOME | JonathanWise.com</title>
+</head>
+<body>
+	<header>
+		<div class="topnav" id="myTopnav">
+			<a href="/">Home</a>
+			<a href="/ai">AI</a>
+			<a href="/drone">Drones</a>
+			<a href="/eng">Engineering</a>
+			<a href="/piano">Piano</a>
+			<a href="/ham">Amature Radio</a>
+			<a href="/contact">Contact</a>
+			<a href="/about">About</a>
+			<!-- 	Until I know what this does, its out.
+	<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+		<i class="fa fa-bars"></i>
+	</a>
+	-->
+		</div>
+	</header>
+	<div class="aside-left">
+	<!--
+		<h2 align="left"><u>Most Recent Stuff</u></h3>
+		<p><a href="ai/ai.html">AI page updated<a/></p>
+	-->
+	</div>
+	
+	<main>
+		{% block main %}{% endblock %}
+	</main>
+	<aside>
+		
+	</aside>
+	<footer>
+		<div class="left-footer">
+			<p align="center"> JONATHAN</p>
+		</div>
+		<div class="center-footer">
+			<p align="center">DAVID</p>
+		</div>
+		<div class="right-footer">
+			<p align="center">WISE</p>
+		</div>
+		<div class="copyright">
+			<p align="center">Copyright &copy; 2019 JonathanWise.com</p>
+		</div>
+	</footer>
+	</body>
+</html>

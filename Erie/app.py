@@ -1,10 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 app = Flask(__name__)
 
 # Make the WSGI interface available at the top level so wfastcgi can get it.
 wsgi_app = app.wsgi_app
-
-
 
 @app.route("/")
 def index():
@@ -30,7 +28,6 @@ def contact():
 @app.route("/ai")
 def ai():
     return render_template("ai/ai.html")
-
 
 if __name__ == '__main__':
     import os
