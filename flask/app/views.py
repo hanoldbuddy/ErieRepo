@@ -1,8 +1,5 @@
-from flask import Flask, render_template, url_for
-app = Flask(__name__)
-
-# Make the WSGI interface available at the top level so wfastcgi can get it.
-wsgi_app = app.wsgi_app
+from app import app
+from flask import render_template
 
 @app.route("/")
 def index():
@@ -28,12 +25,3 @@ def contact():
 @app.route("/ai")
 def ai():
     return render_template("ai/ai.html")
-
-if __name__ == '__main__':
-    import os
-    HOST = os.environ.get('SERVER_HOST', 'localhost')
-    try:
-        PORT = int(os.environ.get('SERVER_PORT', '5555'))
-    except ValueError:
-        PORT = 5555
-    app.run(HOST, PORT)
