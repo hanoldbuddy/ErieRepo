@@ -25,7 +25,3 @@ def contact():
 @app.route("/ai")
 def ai():
     return render_template("ai/ai.html")
-
-# Code for the masses
-
-@app.route("")

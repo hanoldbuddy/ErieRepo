@@ -1,4 +1,3 @@
 # Ignore python virtual environments
 env
 __pycache__
-.vs
